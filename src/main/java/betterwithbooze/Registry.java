@@ -27,7 +27,7 @@ public class Registry {
     private static ArrayList<Block> BLOCKS = new ArrayList<>();
     private static ArrayList<Item> ITEMS = new ArrayList<>();
 
-    @GameRegistry.ObjectHolder("betterwithbooze:ale")
+    @GameRegistry.ObjectHolder("betterwithbooze:cider")
     public static Potion POTION_ALE;
 
     public static Fluid ALE;
@@ -59,7 +59,7 @@ public class Registry {
     public static void registerFluids()
     {
         //Alcohol itself. Cold.
-        FluidRegistry.registerFluid(ALE = new Fluid("ale",new ResourceLocation(BetterWithBooze.MODID,"blocks/ale"),new ResourceLocation(BetterWithBooze.MODID,"blocks/ale_flowing")));
+        FluidRegistry.registerFluid(ALE = new Fluid("cider",new ResourceLocation(BetterWithBooze.MODID,"blocks/cider"),new ResourceLocation(BetterWithBooze.MODID,"blocks/ale_flowing")));
 
     public static void registerBlockModels()
     {
@@ -120,7 +120,7 @@ public class Registry {
 
     @SubscribeEvent
     public static void registerPotions(RegistryEvent.Register<Potion> event) {
-        event.getRegistry().register(new PotionAle().setRegistryName(BetterWithBooze.MODID,"ale"));
+        event.getRegistry().register(new PotionAle().setRegistryName(BetterWithBooze.MODID,"cider"));
     }
 
     private static void registerTileEntity(Class<? extends TileEntity> tile)

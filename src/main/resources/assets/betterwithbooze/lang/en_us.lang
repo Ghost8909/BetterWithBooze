@@ -1,0 +1,13 @@
+itemGroup.betterwithbooze=Better With Booze
+
+
+item.mug.name=Mug of %s [WIP]
+item.mug.empty.name=Empty Mug [WIP]
+
+fluid.ale=Ale
+
+potion.potency.2=III
+potion.potency.3=IV
+potion.potency.4=V
+
+attribute.name.generic.physicalDamageRate=Physical Damage Taken
